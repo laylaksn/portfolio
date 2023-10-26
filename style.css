@@ -10,22 +10,6 @@
     font-family: sans-serif;
     text-align: center;
   }
-  
-  #education-top {
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #555;
-    font-size: 36px;
-    font-weight: bold;
-    padding: 5px 20px;
-    border-radius: 4px;
-    background-color: rgb(249, 239, 241);
-    max-width: 85%;
-    text-align: center;
-    margin: 40px;
-    margin-inline: 50px;
-  
-  }
 
   p {
     font-size: 18px;
@@ -139,39 +123,12 @@
 
 .timeline {
   position: absolute;
-  top: 60px;
+  top: 200px;
   left: 50%;
-  width: 10px;
+  width: 20px;
   height: 100%;
   background-color: #b1cae7;
   /* transform: translateX(-50%); /* Add this line */
-}
-
-.pointer {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(144, 144, 223);
-  border-radius: 50%;
-  transform: translate(-50%, -50%); /* Adjusted this line */
-}
-
-.pointer:nth-child(1) {
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(-45deg); /* Add this line */
-}
-
-.pointer:nth-child(2) {
-  left: 50%;
-  top: 25%;
-  transform: translateX(-50%) translateY(-50%) rotate(-45deg); /* Add this line */
-}
-
-.pointer:nth-child(3) {
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%) translateY(-50%) rotate(-45deg); /* Add this line */
 }
 
 .section {
