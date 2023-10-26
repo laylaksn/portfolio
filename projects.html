@@ -3,6 +3,7 @@
   <head>
     <title>My Portfolio - Projects</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,7 +22,7 @@
 
       <!-- Projects Grid -->
       <div class="projects-grid">
-        <div class="project-tile">
+        <div class="project-tile" >
           <img src="thiswebsite.png" alt="Project 1">
           <p>This website - a portfolio for everything I do</p>
         </div>
@@ -35,6 +36,13 @@
         </div>
         <!-- Add more project tiles as needed -->
       </div>
+
+      <!-- Lightbox container -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <span class="close-button" onclick="document.querySelector('.lightbox').style.display = 'none'">&times;</span>
+    </div>
+  </div>
 
       <div class="social-sidebar">
         <div class="social-buttons">
