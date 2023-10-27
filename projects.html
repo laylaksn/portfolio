@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>My Portfolio - Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
   <body>
@@ -22,39 +22,51 @@
 
       <!-- Projects Grid -->
       <div class="projects-grid">
-        <div class="project-tile" >
-          <img src="thiswebsite.png" alt="Project 1">
+        <div class="project-tile">
+          <img src="thiswebsite.png" alt="Project 1" />
           <p>This website - a portfolio for everything I do</p>
         </div>
         <div class="project-tile">
-          <img src="mathstools.png" alt="Project 2">
+          <img src="mathstools.png" alt="Project 2" />
           <p>Wolfram Beta - a maths tools app</p>
         </div>
         <div class="project-tile">
-          <img src="termiadur.png" alt="Project 3">
-          <p>Maths yn Gymraeg - flashcards to practice Welsh Mathematical vocab</p>
+          <img src="termiadur.png" alt="Project 3" />
+          <p>
+            Maths yn Gymraeg - flashcards to practice Welsh Mathematical vocab
+          </p>
         </div>
         <!-- Add more project tiles as needed -->
       </div>
 
-      <!-- Lightbox container -->
-  <div class="lightbox">
-    <div class="lightbox-content">
-      <span class="close-button" onclick="document.querySelector('.lightbox').style.display = 'none'">&times;</span>
-    </div>
-  </div>
+      <div id="project-lightbox" class="lightbox">
+        <div class="lightbox-content">
+          <span class="close-lightbox" id="close-lightbox">×</span>
+          <h2>Project Title</h2>
+          <img src="project-image.jpg" alt="Project" />
+          <p>Project description goes here.</p>
+        </div>
+      </div>
 
       <div class="social-sidebar">
         <div class="social-buttons">
           <a href="https://github.com/laylaksn" class="button">Email</a>
           <a href="https://github.com/laylaksn" class="button">Short Form CV</a>
           <a href="https://github.com/laylaksn" class="button">Long Form CV</a>
-          <a href="https://www.linkedin.com/in/layla-sadeghi-namaghi-465267160/" class="button">LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/layla-sadeghi-namaghi-465267160/"
+            class="button"
+            >LinkedIn</a
+          >
           <a href="https://twitter.com/Layla_ksn" class="button">Twitter</a>
           <a href="https://github.com/laylaksn" class="button">GitHub</a>
-          <a href="https://profiles.cardiff.ac.uk/research-staff/sadeghinamaghilk" class="button">Cardiff University</a>
+          <a
+            href="https://profiles.cardiff.ac.uk/research-staff/sadeghinamaghilk"
+            class="button"
+            >Cardiff University</a
+          >
         </div>
-        </div>
+      </div>
     </div>
   </body>
 </html>
