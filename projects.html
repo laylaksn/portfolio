@@ -3,7 +3,6 @@
   <head>
     <title>My Portfolio - Projects</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -39,15 +38,6 @@
         <!-- Add more project tiles as needed -->
       </div>
 
-      <div id="project-lightbox" class="lightbox">
-        <div class="lightbox-content">
-          <span class="close-lightbox" id="close-lightbox">×</span>
-          <h2>Project Title</h2>
-          <img src="project-image.jpg" alt="Project" />
-          <p>Project description goes here.</p>
-        </div>
-      </div>
-
       <div class="social-sidebar">
         <div class="social-buttons">
           <a href="https://github.com/laylaksn" class="button">Email</a>
@@ -67,6 +57,36 @@
           >
         </div>
       </div>
+
+      <!-- Lightboxes for Projects -->
+<div class="lightbox" id="project1-lightbox">
+  <div class="lightbox-content">
+    <span class="close-button" onclick="closeLightbox('project1-lightbox')">&times;</span>
+    <h2>Project 1 - This Website</h2>
+    <p>Additional information about Project 1 goes here.</p>
+    <img src="project1-image.jpg" alt="Project 1 Image">
+  </div>
+</div>
+
+<div class="lightbox" id="project2-lightbox">
+  <div class="lightbox-content">
+    <span class="close-button" onclick="closeLightbox('project2-lightbox')">&times;</span>
+    <h2>Project 2 - Wolfram Beta</h2>
+    <p>Additional information about Project 2 goes here.</p>
+    <img src="project2-image.jpg" alt="Project 2 Image">
+  </div>
+</div>
+
+<div class="lightbox" id="project3-lightbox">
+  <div class="lightbox-content">
+    <span class="close-button" onclick="closeLightbox('project3-lightbox')">&times;</span>
+    <h2>Project 3 - Maths yn Gymraeg</h2>
+    <p>Additional information about Project 3 goes here.</p>
+    <img src="project3-image.jpg" alt="Project 3 Image">
+  </div>
+</div>
+
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
