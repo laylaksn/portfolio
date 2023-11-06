@@ -16,7 +16,6 @@
         <li><a href="index.html">Me</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <!-- Add other navigation links as needed -->
       </ul>
     </nav>
 
@@ -53,9 +52,8 @@
 
       <div class="social-sidebar">
       <div class="social-buttons">
-        <a href="https://github.com/laylaksn" class="button">Email</a>
-        <a href="https://github.com/laylaksn" class="button">Short Form CV</a>
-        <a href="https://github.com/laylaksn" class="button">Long Form CV</a>
+        <a href="mailto:laylasadeghi@gmail.com" class="button">Email</a>
+        <a href="Layla_longwordCV.pdf" class="button">CV</a>
         <a href="https://www.linkedin.com/in/layla-sadeghi-namaghi-465267160/" class="button">LinkedIn</a>
         <a href="https://twitter.com/Layla_ksn" class="button">Twitter</a>
         <a href="https://github.com/laylaksn" class="button">GitHub</a>
@@ -70,28 +68,5 @@
     <div class="overlay" id="overlay">
       <img src="" alt="Enlarged Image" id="enlarged-image">
   </div>
-
-  <script>
-    // Get all the photo-tile elements
-    const photoTiles = document.querySelectorAll('.photo-tile');
-
-    // Get the overlay and enlarged image elements
-    const overlay = document.getElementById('overlay');
-    const enlargedImage = document.getElementById('enlarged-image');
-
-    // Add a click event listener to each photo tile
-    photoTiles.forEach(photoTile => {
-        photoTile.addEventListener('click', () => {
-            const imageSrc = photoTile.querySelector('img').src;
-            enlargedImage.src = imageSrc;
-            overlay.style.display = 'block';
-        });
-    });
-
-    // Add a click event listener to the overlay to close it
-    overlay.addEventListener('click', () => {
-        overlay.style.display = 'none';
-    });
-    </script>
   </body>
 </html>

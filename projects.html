@@ -21,15 +21,15 @@
 
       <!-- Projects Grid -->
       <div class="projects-grid">
-        <div class="project-tile">
+        <div class="project-tile" id="project1">
           <img src="thiswebsite.png" alt="Project 1" />
           <p>This website - a portfolio for everything I do</p>
         </div>
-        <div class="project-tile">
-          <img src="mathstools.png" alt="Project 2" />
-          <p>Wolfram Beta - a maths tools app</p>
+        <div class="project-tile" id="project2">
+          <img src="recipewebsite.png" alt="Project 2" />
+          <p>All I Ate - a recipe website</p>
         </div>
-        <div class="project-tile">
+        <div class="project-tile" id="project3">
           <img src="termiadur.png" alt="Project 3" />
           <p>
             Maths yn Gymraeg - flashcards to practice Welsh Mathematical vocab
@@ -40,53 +40,43 @@
 
       <div class="social-sidebar">
         <div class="social-buttons">
-          <a href="https://github.com/laylaksn" class="button">Email</a>
-          <a href="https://github.com/laylaksn" class="button">Short Form CV</a>
-          <a href="https://github.com/laylaksn" class="button">Long Form CV</a>
-          <a
-            href="https://www.linkedin.com/in/layla-sadeghi-namaghi-465267160/"
-            class="button"
-            >LinkedIn</a
-          >
+          <a href="mailto:laylasadeghi@gmail.com" class="button">Email</a>
+          <a href="Layla_longwordCV.pdf" class="button">CV</a>
+          <a href="https://www.linkedin.com/in/layla-sadeghi-namaghi-465267160/" class="button">LinkedIn</a>
           <a href="https://twitter.com/Layla_ksn" class="button">Twitter</a>
           <a href="https://github.com/laylaksn" class="button">GitHub</a>
-          <a
-            href="https://profiles.cardiff.ac.uk/research-staff/sadeghinamaghilk"
-            class="button"
-            >Cardiff University</a
-          >
+          <a href="https://profiles.cardiff.ac.uk/research-staff/sadeghinamaghilk" class="button">Cardiff University</a>
         </div>
-      </div>
+        </div>
 
-      <!-- Lightboxes for Projects -->
-<div class="lightbox" id="project1-lightbox">
-  <div class="lightbox-content">
-    <span class="close-button" onclick="closeLightbox('project1-lightbox')">&times;</span>
-    <h2>Project 1 - This Website</h2>
-    <p>Additional information about Project 1 goes here.</p>
-    <img src="project1-image.jpg" alt="Project 1 Image">
+ <!-- Lightbox containers -->
+<div class="lightbox" id="lightbox1">
+  <div class="lightbox-container">
+  <p>This is a website for all the projects I've completed. Here I've used JavaScript, HTML and CSS.
+    Visit here : <a href="https://maths-yn-gymraeg.vercel.app/">https://maths-yn-gymraeg.vercel.app/</a>.  
+  </p>
+  <img src="thiswebsite.png" alt="Project 1">
   </div>
 </div>
 
-<div class="lightbox" id="project2-lightbox">
-  <div class="lightbox-content">
-    <span class="close-button" onclick="closeLightbox('project2-lightbox')">&times;</span>
-    <h2>Project 2 - Wolfram Beta</h2>
-    <p>Additional information about Project 2 goes here.</p>
-    <img src="project2-image.jpg" alt="Project 2 Image">
+<div class="lightbox" id="lightbox2">
+  <div class="lightbox-container">
+  <p>Visit here: <Link href="https://all-i-ate.vercel.app/">https://all-i-ate.vercel.app/</Link>  </p>
+  <img src="recipewebsite.png" alt="Project 2">
   </div>
 </div>
 
-<div class="lightbox" id="project3-lightbox">
-  <div class="lightbox-content">
-    <span class="close-button" onclick="closeLightbox('project3-lightbox')">&times;</span>
-    <h2>Project 3 - Maths yn Gymraeg</h2>
-    <p>Additional information about Project 3 goes here.</p>
-    <img src="project3-image.jpg" alt="Project 3 Image">
+<div class="lightbox" id="lightbox3">
+  <div class="lightbox-container">
+  <p>Maths yn Gymraeg. This is a simple Flashcard website I made to practice my mathematical terms in Welsh. I used JavaScript, CSS and HTML. 
+    Visit here : <a href="https://maths-yn-gymraeg.vercel.app/">https://maths-yn-gymraeg.vercel.app/</a>.
+  </p>
+  <img src="termiadur.png" alt="Project 3">
   </div>
 </div>
 
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>

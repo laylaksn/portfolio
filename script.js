@@ -1,29 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Your other JavaScript code here
+    // Get all project tiles
+    const projectTiles = document.querySelectorAll(".project-tile");
   
-    // Function to open the lightbox for a specific project
-    function openLightbox(lightboxId) {
-      var lightbox = document.getElementById(lightboxId);
-      lightbox.style.display = "block";
-    }
+    // Add click event listeners to project tiles
+    projectTiles.forEach(function (tile) {
+      tile.addEventListener("click", function () {
+        // Get the corresponding lightbox ID
+        const lightboxId = "lightbox" + tile.id.substr(7);
   
-    // Function to close the lightbox
-    function closeLightbox(lightboxId) {
-      var lightbox = document.getElementById(lightboxId);
-      lightbox.style.display = "none";
-    }
+        // Show the lightbox
+        const lightbox = document.getElementById(lightboxId);
+        lightbox.style.display = "block";
   
-    // Attach click event listeners to project tiles
-    document.querySelector(".project-tile:nth-child(1)").addEventListener("click", function () {
-      openLightbox("project1-lightbox");
+        // Hide the lightbox when clicked outside
+        lightbox.addEventListener("click", function () {
+          lightbox.style.display = "none";
+        });
+      });
     });
-  
-    document.querySelector(".project-tile:nth-child(2)").addEventListener("click", function () {
-      openLightbox("project2-lightbox");
-    });
-  
-    document.querySelector(".project-tile:nth-child(3)").addEventListener("click", function () {
-      openLightbox("project3-lightbox");
-    });
+
+        // Get all the photo-tile elements
+        const photoTiles = document.querySelectorAll('.photo-tile');
+
+        // Get the overlay and enlarged image elements
+        const overlay = document.getElementById('overlay');
+        const enlargedImage = document.getElementById('enlarged-image');
+    
+        // Add a click event listener to each photo tile
+        photoTiles.forEach(photoTile => {
+            photoTile.addEventListener('click', () => {
+                const imageSrc = photoTile.querySelector('img').src;
+                enlargedImage.src = imageSrc;
+                overlay.style.display = 'block';
+            });
+        });
+    
+        // Add a click event listener to the overlay to close it
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+        });
   });
   
