@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "start": "node server.js",
-    "build": "npm run build:css && npm run build:js",
-    "build:js": "babel script.js -o output.js",
+    "build": "npm run build:css && npm run build:js && mkdir public && cp output.css output.js public/",
+    "build:js": "npx babel script.js -o output.js",
     "build:css": "node -e \"require('fs-extra').copySync('style.css', 'output.css')\"",
     "watch:css": "sass --watch input.scss:output.css --no-source-map",
     "watch:js": "babel script.js -o output.js --watch",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "babel-core": "^x.x.x"
   },
   "author": "",
   "license": "ISC",
