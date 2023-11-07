@@ -7,7 +7,7 @@
     "start": "node server.js",
     "build": "npm run build:css && npm run build:js",
     "build:js": "babel script.js -o output.js",
-    "build:css": "copy style.css output.css",
+    "build:css": "node -e \"require('fs-extra').copySync('style.css', 'output.css')\"",
     "watch:css": "sass --watch input.scss:output.css --no-source-map",
     "watch:js": "babel script.js -o output.js --watch",
     "dev": "node server.js"
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.2",
-    "@babel/preset-env": "^7.23.2"
+    "@babel/preset-env": "^7.23.2",
+    "fs-extra": "^11.1.1"
   }
 }
