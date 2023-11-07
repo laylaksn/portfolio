@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "npm run build:css && npm run build:js && mkdir public && cp output.css output.js public/",
-    "build:js": "npx babel script.js -o output.js",
+    "build:js": "npm run babel -- script.js -o public/output.js",
     "build:css": "node -e \"require('fs-extra').copySync('style.css', 'output.css')\"",
     "watch:css": "sass --watch input.scss:output.css --no-source-map",
     "watch:js": "babel script.js -o output.js --watch",
