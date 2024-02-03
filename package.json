@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "npm run build:css && npm run build:js && mkdir public && cp output.css output.js public/",
-    "build:js": "npm run babel -- script.js -o public/output.js",
+    "build:js": "babel script.js --presets @babel/preset-env -o public/output.js",
     "build:css": "node -e \"require('fs-extra').copySync('style.css', 'output.css')\"",
     "watch:css": "sass --watch input.scss:output.css --no-source-map",
     "watch:js": "babel script.js -o output.js --watch",
@@ -14,16 +14,18 @@
   },
   "dependencies": {
     "babel-core": "^x.x.x",
+    "debug": "^4.3.1",
     "express": "^4.18.2",
     "json5": "^1.0.2",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "uuid": "^7.0.3"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.23.0",
-    "@babel/core": "^7.23.2",
-    "@babel/preset-env": "^7.23.2",
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "fs-extra": "^11.1.1"
   }
 }
