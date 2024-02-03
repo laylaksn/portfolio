@@ -13,9 +13,10 @@
     "dev": "node server.js"
   },
   "dependencies": {
+    "babel-core": "^x.x.x",
     "express": "^4.18.2",
-    "sass": "^1.69.5",
-    "babel-core": "^x.x.x"
+    "json5": "^1.0.2",
+    "sass": "^1.69.5"
   },
   "author": "",
   "license": "ISC",
